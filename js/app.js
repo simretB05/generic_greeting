@@ -1,6 +1,9 @@
-function greetings()
+function generic_greeting(user)
 {
-    console.log(`wellcome!!`)
+    console.log(`wellcome!! ${user}`)
 }
 
-greetings()
+generic_greeting( `buba` )
+generic_greeting( `simret` )
+generic_greeting( `chaki su` )
+generic_greeting(`elmo`)
