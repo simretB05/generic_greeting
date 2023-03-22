@@ -10,11 +10,11 @@ generic_greeting( `elmo` )
 
 
 
-function find_specific_greeting( users )
+function find_specific_greeting( users, search_user )
 {
-    for ( let counter = 0; counter < users.length; counter++ )
+    for ( let counter = 0; counter < users[counter].length; counter++ )
     {
-        if ( users === `admin` )
+        if ( users[counter] === `admin` )
         {
 
             return true
@@ -23,5 +23,5 @@ function find_specific_greeting( users )
     return false
 
 }
-let check_for_admin = find_specific_greeting( `simret` )
+let check_for_admin = find_specific_greeting( [`admin`,`simret` ,`rsoe` ,`bettye`] )
 console.log(check_for_admin)
